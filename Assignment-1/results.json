@@ -1,0 +1,842 @@
+{
+ "sizes": [
+  1000,
+  10000,
+  100000,
+  1000000
+ ],
+ "seeds": {
+  "1000": 101,
+  "10000": 102,
+  "100000": 103,
+  "1000000": 104
+ },
+ "runs": 5,
+ "main": {
+  "1000": {
+   "pre_time": 0.0008651820000125099,
+   "E": 1502,
+   "far": 929,
+   "far_depth": 9,
+   "rows": {
+    "BFS": {
+     "found": true,
+     "depth": 9,
+     "cost": 37,
+     "generated": 1000,
+     "expanded": 992,
+     "succ": 2986,
+     "max_frontier": 352,
+     "time": 0.00039500999999972917,
+     "valid": true,
+     "cost_optimal": false,
+     "depth_optimal": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 10,
+     "cost": 30,
+     "generated": 1107,
+     "expanded": 955,
+     "succ": 2925,
+     "max_frontier": 374,
+     "time": 0.0015287953999973069,
+     "valid": true,
+     "cost_optimal": true,
+     "depth_optimal": false
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 9,
+     "cost": 37,
+     "generated": 5040,
+     "expanded": 8755,
+     "succ": 18934,
+     "max_frontier": 10,
+     "time": 0.004825402400001622,
+     "valid": true,
+     "iterations": 10,
+     "max_seen": 997,
+     "cost_optimal": false,
+     "depth_optimal": true
+    }
+   }
+  },
+  "10000": {
+   "pre_time": 0.007476478000000952,
+   "E": 15001,
+   "far": 9967,
+   "far_depth": 12,
+   "rows": {
+    "BFS": {
+     "found": true,
+     "depth": 12,
+     "cost": 67,
+     "generated": 10000,
+     "expanded": 9993,
+     "succ": 29987,
+     "max_frontier": 3227,
+     "time": 0.006173016399998232,
+     "valid": true,
+     "cost_optimal": false,
+     "depth_optimal": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 13,
+     "cost": 58,
+     "generated": 11226,
+     "expanded": 9998,
+     "succ": 29992,
+     "max_frontier": 3678,
+     "time": 0.017285463199993956,
+     "valid": true,
+     "cost_optimal": true,
+     "depth_optimal": false
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 12,
+     "cost": 67,
+     "generated": 62593,
+     "expanded": 144143,
+     "succ": 342606,
+     "max_frontier": 13,
+     "time": 0.09450941980000493,
+     "valid": true,
+     "iterations": 13,
+     "max_seen": 9998,
+     "cost_optimal": false,
+     "depth_optimal": true
+    }
+   }
+  },
+  "100000": {
+   "pre_time": 0.12089516399998956,
+   "E": 150002,
+   "far": 85072,
+   "far_depth": 14,
+   "rows": {
+    "BFS": {
+     "found": true,
+     "depth": 14,
+     "cost": 69,
+     "generated": 100000,
+     "expanded": 99996,
+     "succ": 299992,
+     "max_frontier": 31754,
+     "time": 0.09150424480000083,
+     "valid": true,
+     "cost_optimal": false,
+     "depth_optimal": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 15,
+     "cost": 51,
+     "generated": 111989,
+     "expanded": 99760,
+     "succ": 299724,
+     "max_frontier": 37157,
+     "time": 0.2889395448000016,
+     "valid": true,
+     "cost_optimal": true,
+     "depth_optimal": false
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 14,
+     "cost": 69,
+     "generated": 736110,
+     "expanded": 1819681,
+     "succ": 4396327,
+     "max_frontier": 15,
+     "time": 1.8731707548000087,
+     "valid": true,
+     "iterations": 15,
+     "max_seen": 99999,
+     "cost_optimal": false,
+     "depth_optimal": true
+    }
+   }
+  },
+  "1000000": {
+   "pre_time": 1.77356520699999,
+   "E": 1500001,
+   "far": 966037,
+   "far_depth": 15,
+   "rows": {
+    "BFS": {
+     "found": true,
+     "depth": 15,
+     "cost": 62,
+     "generated": 999996,
+     "expanded": 999890,
+     "succ": 2999880,
+     "max_frontier": 314239,
+     "time": 1.860708448799994,
+     "valid": true,
+     "cost_optimal": false,
+     "depth_optimal": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 15,
+     "cost": 45,
+     "generated": 1110669,
+     "expanded": 939228,
+     "succ": 2907229,
+     "max_frontier": 369247,
+     "time": 6.377964946799989,
+     "valid": true,
+     "cost_optimal": true,
+     "depth_optimal": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 15,
+     "cost": 62,
+     "generated": 7161709,
+     "expanded": 18503102,
+     "succ": 45081355,
+     "max_frontier": 16,
+     "time": 31.97568297439999,
+     "valid": true,
+     "iterations": 16,
+     "max_seen": 999994,
+     "cost_optimal": false,
+     "depth_optimal": true
+    }
+   }
+  }
+ },
+ "tests": {
+  "1000": {
+   "reachable": {
+    "BFS": {
+     "found": true,
+     "depth": 9,
+     "cost": 37,
+     "generated": 1000,
+     "expanded": 992,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 10,
+     "cost": 30,
+     "generated": 1107,
+     "expanded": 955,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 9,
+     "cost": 37,
+     "generated": 5040,
+     "expanded": 8755,
+     "pass": true
+    }
+   },
+   "unreachable": {
+    "BFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 1000,
+     "expanded": 1000,
+     "pass": true
+    },
+    "UCS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 1113,
+     "expanded": 1000,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 6109,
+     "expanded": 14325,
+     "pass": true
+    }
+   },
+   "start==goal": {
+    "BFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 1,
+     "pass": true
+    }
+   }
+  },
+  "10000": {
+   "reachable": {
+    "BFS": {
+     "found": true,
+     "depth": 12,
+     "cost": 67,
+     "generated": 10000,
+     "expanded": 9993,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 13,
+     "cost": 58,
+     "generated": 11226,
+     "expanded": 9998,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 12,
+     "cost": 67,
+     "generated": 62593,
+     "expanded": 144143,
+     "pass": true
+    }
+   },
+   "unreachable": {
+    "BFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 10000,
+     "expanded": 10000,
+     "pass": true
+    },
+    "UCS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 11226,
+     "expanded": 10000,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 72597,
+     "expanded": 198746,
+     "pass": true
+    }
+   },
+   "start==goal": {
+    "BFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 1,
+     "pass": true
+    }
+   }
+  },
+  "100000": {
+   "reachable": {
+    "BFS": {
+     "found": true,
+     "depth": 14,
+     "cost": 69,
+     "generated": 100000,
+     "expanded": 99996,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 15,
+     "cost": 51,
+     "generated": 111989,
+     "expanded": 99760,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 14,
+     "cost": 69,
+     "generated": 736110,
+     "expanded": 1819681,
+     "pass": true
+    }
+   },
+   "unreachable": {
+    "BFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 100000,
+     "expanded": 100000,
+     "pass": true
+    },
+    "UCS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 112013,
+     "expanded": 100000,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 837421,
+     "expanded": 2637462,
+     "pass": true
+    }
+   },
+   "start==goal": {
+    "BFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 1,
+     "pass": true
+    }
+   }
+  },
+  "1000000": {
+   "reachable": {
+    "BFS": {
+     "found": true,
+     "depth": 15,
+     "cost": 62,
+     "generated": 999996,
+     "expanded": 999890,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 15,
+     "cost": 45,
+     "generated": 1110669,
+     "expanded": 939228,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 15,
+     "cost": 62,
+     "generated": 7161709,
+     "expanded": 18503102,
+     "pass": true
+    }
+   },
+   "unreachable": {
+    "BFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 1000000,
+     "expanded": 1000000,
+     "pass": true
+    },
+    "UCS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 1120526,
+     "expanded": 1000000,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": false,
+     "depth": null,
+     "cost": null,
+     "generated": 8161914,
+     "expanded": 25322646,
+     "pass": true
+    }
+   },
+   "start==goal": {
+    "BFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "UCS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 0,
+     "pass": true
+    },
+    "IDDFS": {
+     "found": true,
+     "depth": 0,
+     "cost": 0,
+     "generated": 1,
+     "expanded": 1,
+     "pass": true
+    }
+   }
+  }
+ },
+ "cases": {
+  "best (goal 1 hop away)": {
+   "BFS": {
+    "generated": 2.0,
+    "expanded": 1.0
+   },
+   "UCS": {
+    "generated": 52.0,
+    "expanded": 15.0
+   },
+   "IDDFS": {
+    "generated": 2.0,
+    "expanded": 3.0
+   }
+  },
+  "average (200 random wards)": {
+   "BFS": {
+    "generated": 4791.685,
+    "expanded": 2725.215
+   },
+   "UCS": {
+    "generated": 7785.045,
+    "expanded": 4898.505
+   },
+   "IDDFS": {
+    "generated": 10339.495,
+    "expanded": 12218.72
+   }
+  },
+  "worst reachable (deepest ward)": {
+   "BFS": {
+    "generated": 10000.0,
+    "expanded": 9993.0
+   },
+   "UCS": {
+    "generated": 11226.0,
+    "expanded": 9998.0
+   },
+   "IDDFS": {
+    "generated": 62593.0,
+    "expanded": 144143.0
+   }
+  },
+  "worst (unreachable ward)": {
+   "BFS": {
+    "generated": 10000.0,
+    "expanded": 10000.0
+   },
+   "UCS": {
+    "generated": 11226.0,
+    "expanded": 10000.0
+   },
+   "IDDFS": {
+    "generated": 72597.0,
+    "expanded": 198746.0
+   }
+  },
+  "_bfs_suboptimal_fraction": 0.555,
+  "_bfs_mean_extra_cost_when_suboptimal": 7.666666666666667
+ },
+ "tree_variant": {
+  "1000": {
+   "found": true,
+   "calls": 44607,
+   "limit": 9,
+   "time": 0.007949703000008412,
+   "graph_search_expanded": 8755
+  },
+  "10000": {
+   "found": true,
+   "calls": 2500314,
+   "limit": 12,
+   "time": 0.5567517519999683,
+   "graph_search_expanded": 144143
+  },
+  "100000": {
+   "found": null,
+   "calls": 3000001,
+   "limit": 11,
+   "time": 1.0215729330000158,
+   "graph_search_expanded": 1819681
+  },
+  "1000000": {
+   "found": null,
+   "calls": 3000001,
+   "limit": 10,
+   "time": 1.638849897,
+   "graph_search_expanded": 18503102
+  }
+ },
+ "recurrence_check": [
+  {
+   "b": 2,
+   "l": 0,
+   "calls": 1,
+   "formula": 1,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 1,
+   "calls": 3,
+   "formula": 3,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 2,
+   "calls": 7,
+   "formula": 7,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 3,
+   "calls": 15,
+   "formula": 15,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 4,
+   "calls": 31,
+   "formula": 31,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 5,
+   "calls": 63,
+   "formula": 63,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 6,
+   "calls": 127,
+   "formula": 127,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 7,
+   "calls": 255,
+   "formula": 255,
+   "match": true
+  },
+  {
+   "b": 2,
+   "l": 8,
+   "calls": 511,
+   "formula": 511,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 0,
+   "calls": 1,
+   "formula": 1,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 1,
+   "calls": 4,
+   "formula": 4,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 2,
+   "calls": 13,
+   "formula": 13,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 3,
+   "calls": 40,
+   "formula": 40,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 4,
+   "calls": 121,
+   "formula": 121,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 5,
+   "calls": 364,
+   "formula": 364,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 6,
+   "calls": 1093,
+   "formula": 1093,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 7,
+   "calls": 3280,
+   "formula": 3280,
+   "match": true
+  },
+  {
+   "b": 3,
+   "l": 8,
+   "calls": 9841,
+   "formula": 9841,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 0,
+   "calls": 1,
+   "formula": 1,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 1,
+   "calls": 5,
+   "formula": 5,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 2,
+   "calls": 21,
+   "formula": 21,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 3,
+   "calls": 85,
+   "formula": 85,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 4,
+   "calls": 341,
+   "formula": 341,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 5,
+   "calls": 1365,
+   "formula": 1365,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 6,
+   "calls": 5461,
+   "formula": 5461,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 7,
+   "calls": 21845,
+   "formula": 21845,
+   "match": true
+  },
+  {
+   "b": 4,
+   "l": 8,
+   "calls": 87381,
+   "formula": 87381,
+   "match": true
+  }
+ ],
+ "iddfs_tree_check": [
+  {
+   "b": 2,
+   "d": 8,
+   "calls": 1013,
+   "found": true,
+   "sum_full_iterations": 502,
+   "bound_b_over_b_minus_1": 512.0
+  },
+  {
+   "b": 3,
+   "d": 6,
+   "calls": 1636,
+   "found": true,
+   "sum_full_iterations": 543,
+   "bound_b_over_b_minus_1": 1093.5
+  },
+  {
+   "b": 4,
+   "d": 5,
+   "calls": 1818,
+   "found": true,
+   "sum_full_iterations": 453,
+   "bound_b_over_b_minus_1": 1365.3333333333333
+  }
+ ]
+}
